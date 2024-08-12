@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sickle Cell Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 20px 0;
+	    font-size: 72px;
+	    color: #A434b3; 
+        }
+        header {
+            background: url('C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/1.png') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section img {
+            max-width: 100%;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .download {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Slideshow styles */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+    <h1>Sickle Cell Foundation</h1>
+    <header></header>
+<div class="section" id="downloads">
+            <h2>Downloads</h2>
+            <a href="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/document.pdf" class="download" download>Download PDF</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/4.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/5.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/6.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/7.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/8.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/9.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+                <span class="dot" onclick="currentSlide(7)"></span> 
+            </div>
+        </div>
+        <div class="section" id="background">
+            <h2>Background</h2>
+            <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/2.png" alt="Background">
+        </div>
+        
+    <footer>
+        <p>&copy; 2024 Sickle Cell Foundation. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; dots.length > i; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 10000);
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+</body>
+</html>
