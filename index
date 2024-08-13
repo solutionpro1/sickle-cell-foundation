@@ -15,11 +15,11 @@
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
             margin: 20px 0;
-	    font-size: 72px;
-	    color: #A434b3; 
+            font-size: 72px;
+            color: #A434b3; 
         }
         header {
-            background: url('C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/1.png') no-repeat center center;
+            background: url('images/1.png') no-repeat center center;
             background-size: cover;
             height: 100vh;
             color: white;
@@ -119,35 +119,30 @@
 <body>
     <h1>Sickle Cell Foundation</h1>
     <header></header>
-<div class="section" id="downloads">
-            <h2>Downloads</h2>
-            <a href="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/document.pdf" class="download" download>Download PDF</a>
-        </div>
-    </div>
     <div class="content">
         <div class="section" id="about">
             <h2>About Us</h2>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/3.png" style="width:100%">
+                    <img src="images/3.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/4.png" style="width:100%">
+                    <img src="images/4.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/5.png" style="width:100%">
+                    <img src="images/5.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/6.png" style="width:100%">
+                    <img src="images/6.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/7.png" style="width:100%">
+                    <img src="images/7.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/8.png" style="width:100%">
+                    <img src="images/8.png" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/9.png" style="width:100%">
+                    <img src="images/9.png" style="width:100%">
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -165,9 +160,13 @@
         </div>
         <div class="section" id="background">
             <h2>Background</h2>
-            <img src="C:/Users/sgcrobotics/Downloads/SICKEL CELL FOUNDATION/2.png" alt="Background">
+            <img src="images/2.png" alt="Background">
         </div>
-        
+        <div class="section" id="downloads">
+            <h2>Downloads</h2>
+            <a href="document.pdf" class="download" download>Download PDF</a>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2024 Sickle Cell Foundation. All rights reserved.</p>
     </footer>
@@ -189,7 +188,7 @@
             }
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 10000);
+            setTimeout(showSlides, 10000); // Change image every 10 seconds
         }
 
         function plusSlides(n) {
